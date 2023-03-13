@@ -1,0 +1,39 @@
+body {
+    font-family :Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(166, 152, 201);
+    } 
+h1 {
+    text-align: center;
+    color: rgb(85, 48, 153); 
+    margin-left: 20px;
+    }
+/*Selector dengan Elemen HTML*/ 
+p {
+    text-align: center; color: rgb(48, 67, 131);
+    
+    font-size : 30px;
+    font-weight : bold;
+
+}
+h2 {
+    text-align: left;
+    margin-left: 20px;
+    font-style : italic;
+    }
+ol{
+    background-color:rgb(84, 175, 206);
+    list-style-position:inside;
+    }
+ul{
+    list-style-type:circle;
+    list-style-position:inside;
+    }
+.foot{
+    background-color:rgb(72, 69, 233);
+    font-style : italic;
+    }
+.mark{
+    background-color:rgb(17, 9, 131);
+    font-style:italic; list-style-position:inside;
+    font-weight:bold;}
+
