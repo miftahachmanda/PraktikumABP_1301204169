@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript</h2>
+
+<p>Miftah achmanda - 1301204169.</p>
+<h3>Penyanyi Favorite</h3>
+
+<p id="java"></p>
+<p id="id"></p>
+
+<h3>Member One Direction</h3>
+<p id="id1"></p>
+
+<h3>Album zayn</h3>
+<p id="id2"></p>
+
+<h3>BIO zayn</h3>
+<p id="id3"></p>
+<p id="id4"></p>
+
+<h3>Lagu zayn</h3>
+<p id="id5"></p>
+
+<h3>My favorite Lagu zayn</h3>
+<p id="id6"></p>
+<p id="id7"></p>
+<script>
+//string dan interger
+
+var x = "zayn malik" + " " +"usia :"+ 30;
+document.getElementById("java").innerHTML = x;
+var data = ["Singer", 1, true];
+document.getElementById("id").innerHTML = data[0];
+
+//array
+var data = ["zayn", "nial", "louis","liam"]; data.length //mengembalikan 3
+data.push("harry"); // mengembalikan 4, data menjadi ["a", "b", "c", "d"]
+document.getElementById("id1").innerHTML = data;
+
+var Album;
+var num = "1"; 
+if (num === "1") { Album = "Mind of mine";
+} else if (num === "2") { Album = "Icarus";
+} else if (num=== "3") { Album = "nobody listening";
+} else { Album = "Tidak Diketahui";
+}
+document.getElementById("id2").innerHTML = Album;
+
+//objek
+var bio = {nama:"Zayn", usia:"30", pekerjaan:"penyanyi"};
+document.getElementById("id3").innerHTML = "Artis bernama "+ bio.nama+" "+"dengan usia"+" "
+                                            +bio.usia +" "+"merupakan seorang"+ " "+bio.pekerjaan;
+
+//properties
+document.getElementById("id4").innerHTML = bio["nama"]+" "+"dengan usia"+" "
+                                            +bio["usia"] ;
+
+//prototype
+var lagu = { album: "Zayn", lagu: " Fool for you"};
+var Album = Object.create(lagu);
+document.getElementById("id5").innerHTML = Album.album +" dengan lagu "+Album.lagu;           
+
+//pembuatan fungsi
+//pemanggilan fungsi
+var myObject = {
+  lagu1:"To begin again",
+  lagu2: "fool for you",
+  toplagu: function() {
+    return this.lagu1 + " dan " + this.lagu2;
+  }
+}
+document.getElementById("id6").innerHTML = myObject.toplagu();
+
+//dom
+const element = document.getElementsByTagName("p");
+
+document.getElementById("id7").innerHTML = 'nama : ' + element[0].innerHTML;
+
+</script>
+
+
+<!DOCTYPE html>
+<html>
+<head> <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script
+    > <script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+            $("p").hide();
+        });
+        $("#show").click(function(){
+            $("p").show();
+        });
+    });
+    </script>
+    </head>
+    <body>
+    <h3>Subscirbe</h3>
+    <p>Subscirbe for support our zayn.</p>
+        <button id="hide">sign in</button>
+        <button id="show">login</button>
+        </body>
+
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+<h2>Remove DOM</h2>
+<p id="id01">Hello zayn!</p>
+<p id="id02">Hello by zayn!</p>
+
+<script>
+$(document).ready(function() {
+  $("#id02").remove();
+});
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head> <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script
+    > <script>
+    $(document).ready(function(){
+        $("button").click(function(){ 
+            $("div").animate({
+                height: 'toggle'
+            });
+        });
+    });
+</script>
+</head>
+<body>
+<p>Click the button to new information</p>
+<button>search for another songs</button>
+<p>kamu dapat melihat apa saja informasi tentang zayn!</p>
+<div
+style="background:#6e0000; height:200px; width:300px; position:absolute;"></div>
+</body>
+</html>
+</html>
